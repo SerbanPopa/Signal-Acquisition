@@ -1,0 +1,1 @@
+-force-include-file "Acquisition.c";"c:\Users\SERBAN\Downloads\SwitchPanels\Acquisition.c" -force-include-file "interfata.c";"e:\APD proiecte\Proiect APD\interfata.c" 

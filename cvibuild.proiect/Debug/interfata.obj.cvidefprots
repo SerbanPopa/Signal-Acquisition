@@ -1,0 +1,40 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[OnMainPanel]
+Class="Function"
+Prototype="int OnMainPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFreqPanel]
+Class="Function"
+Prototype="int OnFreqPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnLoadButtonCB]
+Class="Function"
+Prototype="int OnLoadButtonCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnAplicaButton]
+Class="Function"
+Prototype="int OnAplicaButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnNextButton]
+Class="Function"
+Prototype="int OnNextButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnPrevButton]
+Class="Function"
+Prototype="int OnPrevButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnSwitchPanelCB]
+Class="Function"
+Prototype="int OnSwitchPanelCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFrqButton]
+Class="Function"
+Prototype="int OnFrqButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFilterButton]
+Class="Function"
+Prototype="int OnFilterButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,12 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[OnWavePanelCB]
+Class="Function"
+Prototype="int OnWavePanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnSwitchPanelCB]
+Class="Function"
+Prototype="int OnSwitchPanelCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

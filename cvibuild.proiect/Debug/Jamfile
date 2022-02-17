@@ -1,0 +1,49 @@
+CCFLAGS = -g ;
+HDRS = 	"e:\\cvi2017\\toolslib\\activex\\word"
+	"e:\\cvi2017\\toolslib\\activex\\excel"
+	"e:\\cvi2017\\toolslib\\custctrl"
+	"e:\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"e:\\cvi2017\\toolslib\\cvirtsup"
+	"e:\\cvi2017\\toolslib\\datasock"
+	"e:\\cvi2017\\toolslib\\daqUtil"
+	"e:\\cvi2017\\toolslib\\printing"
+	"e:\\cvi2017\\toolslib\\toolbox"
+	"e:\\cvi2017\\toolslib\\reportgen"
+	"e:\\cvi2017\\toolslib\\localui"
+	"e:\\cvi2017\\instr"
+	"E:\\Stuff\\Shared\\CVI\\toolslib\\custctrl"
+	"E:\\Stuff\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"E:\\Stuff\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"e:\\cvi2017\\include"
+	"E:\\Stuff\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"e:\\cvi2017\\include\\ansi"
+	"e:\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"E:\\Stuff\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"e:\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"e:\\Stuff\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Acquisition.c" = "c:\\Users\\SERBAN\\Downloads\\SwitchPanels" ;
+LOCATE on "interfata.c" = "e:\\APD proiecte\\Proiect APD" ;
+Object "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj" : "c:\\Users\\SERBAN\\Downloads\\SwitchPanels\\Acquisition.c" ;
+FILENUM on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj" = 1 ;
+DEFPROTS on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj" = "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj.cvidefprots" ;
+OUTFILE on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj" = "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj.out" ;
+PrjObjects += "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\Acquisition.obj" ;
+Object "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj" : "e:\\APD proiecte\\Proiect APD\\interfata.c" ;
+FILENUM on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj" = 2 ;
+DEFPROTS on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj" = "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj.cvidefprots" ;
+OUTFILE on "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj" = "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj.out" ;
+PrjObjects += "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\interfata.obj" ;
+Object "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\resources.res" : "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\resources.in.rc" ;
+Depends "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\resources.res" : "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\manifest.xml" ;
+MainFromObjects "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\proiect.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\proiect.exe" : "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\link_options.txt" ;
+Depends "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\proiect.exe" : "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\resources.res" ;
+Depends all : "e:\\APD proiecte\\Proiect APD\\cvibuild.proiect\\Debug\\proiect.exe" ;
